@@ -1,0 +1,369 @@
+/* variable */
+:root {
+    --PrimaryColor: #12B2E7;
+    --SecondaryColor: rgb(18 178 231 / 79%);
+    --bodyBgColor: #292727;
+    --bs-primary-rgb: 18, 178, 231;
+    --bs-btn-bg: 18, 178, 231;
+    --bs-btn-border-color: 18, 178, 231;
+}
+
+/* variable */
+
+/* common css */
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Satoshi-Regular, sans-serif;
+    background-color: var(--bodyBgColor)
+}
+
+
+*,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: var(--PrimaryColor);
+}
+
+.bg-primary {
+    background-color: var(--PrimaryColor);
+}
+
+input:focus-visible,
+textarea:focus-visible {
+    outline: 1px solid #fff;
+    transition: .3s;
+}
+
+.btn {
+    font-size: 20px;
+    padding: 12px 60px;
+}
+
+.btn-primary {
+    background-color: var(--PrimaryColor);
+    border-color: var(--PrimaryColor);
+}
+
+.btn-outline-primary:active,
+.btn-outline-primary:hover,
+.btn-primary:active,
+.btn-primary:hover {
+    background-color: var(--SecondaryColor);
+    border-color: var(--SecondaryColor);
+}
+
+.btn-outline-primary {
+    border-color: var(--PrimaryColor);
+}
+main{margin-top: 109px;}
+/* / common css */
+
+/* header css */
+
+.top-navbar {
+    background-color: var(--PrimaryColor);
+}
+
+.top-navbar-inner {
+    min-height: 40px;
+}
+
+.top-navbar i {
+    height: 16px;
+    width: 16px;
+}
+
+.top-navbar a,
+.top-navbar div {
+    font: 13px/19px Satoshi-Light, sans-serif;
+}
+
+.top-navbar::before {
+    content: "";
+    width: 30%;
+    height: 40px;
+    right: 0;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.top-navbar::after {
+    content: "";
+    width: 80px;
+    height: 80px;
+    right: 28%;
+    background-color: #fff;
+    position: absolute;
+    top: -32px;
+    bottom: 0;
+    transform: rotate(65deg);
+}
+
+.navbar {
+    height: 69px;
+    background: linear-gradient(360deg, #2C2C2F 0%, #292727 100%) !important;
+}
+
+.navbar .navbar-collapse {
+    background: linear-gradient(360deg, #2C2C2F 0%, #292727 100%) !important;
+}
+.navbar ul li .nav-link{
+    font: 14px/20px Satoshi-Bold, sans-serif;;
+}
+.navbar ul li .nav-link:hover{color: var(--PrimaryColor) !important;}
+
+/* / header css */
+
+/* hero image section css*/
+
+.hero-image-section h1 {
+    font: 48px/72px Satoshi-Bold, sans-serif;
+}
+
+/* / hero image section css */
+
+
+/* why-us section css */
+.why-us .dot::before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 0;
+    background-color: var(--PrimaryColor);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.why-us .our-mission-vision .title {
+    font: 20px/24px Satoshi-Medium, sans-serif;
+}
+
+.why-us .our-vision:hover,
+.why-us .our-mission:hover{
+    box-shadow: var(--bs-box-shadow);
+    transform: scale(1.02);
+    transition: .5s;
+}
+
+.why-us p {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.why-us h2 {
+    font: 36px/48px Satoshi-Bold, sans-serif;
+}
+
+/* / why-us section css */
+
+/* what we do in section css */
+
+.what-we-do{
+    background-image: url("../img/expert-section-bg.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.what-we-do .description {
+    font-size: 18px;
+}
+
+.what-we-do .title {
+    font: 40px/48px Satoshi-Bold, sans-serif;
+}
+
+.what-we-do .card:hover {
+    transition-duration: .5s;
+    transform: translate3d(-2px, -3px, 2px);
+    box-shadow: 0 3px 5px 1px #00011152 !important;
+}
+
+.what-we-do .card-body {
+    padding: 17px 23px;
+}
+
+.what-we-do .card-body .sr-no {
+    font-size: 13px;
+    line-height: 19px;
+}
+
+.what-we-do .card-body .card-title {
+    font: 24px/29px Satoshi-Bold, sans-serif;
+}
+
+.what-we-do .card-body .card-text {
+    font-size: 16px;
+    line-height: 28px;
+}
+.what-we-do .card-body .icons {
+   gap: 7px;
+   margin-bottom: 14px;
+}
+.what-we-do .card-body .icons img{
+    padding: 2px;
+    background: #fff;
+    box-shadow: 1px 2px 2px #0001;
+    border-radius: 50%;
+}
+
+/* / what we do in section css */
+
+/* careers section css */
+
+.careers h4 {
+    font: 40px/48px Satoshi-Bold, sans-serif;
+}
+
+.careers p {
+    font-size: 18px;
+    line-height: 22px;
+}
+/* / careers section css */
+
+/* contact-us section */
+
+.contact-us-section {
+    background-image: url("../img/contact-us-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contact-us-section .contact-us-inner {
+    width: 100%;
+    max-width: 638px;
+}
+
+.contact-us-section h6 {
+    font: 35px/44px Satoshi-Medium, sans-serif;
+}
+
+.contact-us-section p {
+    font-size: 19px;
+    line-height: 30px;
+}
+
+.contact-us-section textarea,
+.contact-us-section input {
+    background-color: transparent;
+    resize: none;
+    border: 1px solid #DCE6F5
+}
+
+/* contact-us section */
+
+/* footer css */
+
+footer .icon-btn {
+    padding: 10px;
+    background: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+footer .icon-btn:hover{
+    background: var(--PrimaryColor);
+    transition: .5s;
+}
+
+footer .icon-btn:hover i {
+    color: #fff;
+    transition: .5s;
+}
+footer .service-section a ,
+footer .company-section a {
+    font: 16px/24px Satoshi-Medium, sans-serif;
+}
+
+.footer-bottom {
+    height: 60px;
+    background-color: var(--PrimaryColor);
+}
+.footer-bottom p {line-height: 24px;}
+footer {
+    background-color: #373737;
+}
+
+footer .title {
+    font: 32px/40px Satoshi-Bold, sans-serif;
+}
+
+footer a:hover:not(.social-media-container a , .footer-bottom a){
+    color: var(--PrimaryColor) !important;
+    transition: .3s;
+}
+/* / footer css */
+@media(min-width:992px){
+    .container-xxl {
+        padding-left: 64px !important;
+        padding-right: 64px !important;
+    }
+    .why-us{scroll-margin-top:160px}
+    .what-we-do{scroll-margin-top:110px;}
+    .careers {scroll-margin-top: 120px;}
+    .contact-us-section {scroll-margin-top:110px;}
+}
+@media(max-width:991.98px) {
+    .init-consultant header {
+        position: unset !important;
+    }
+    main{margin-top:0;}
+    .top-navbar::before,
+    .top-navbar::after {
+        content: none;
+    }
+
+    .navbar .navbar-collapse.show {
+        margin: 0px -12px;
+    }
+
+    .what-we-do{
+        background-size: cover;
+    }
+
+    .contact-us-section p,
+    .why-us p {
+        font-size: 14px;
+    }
+
+    .why-us h2,
+    .hero-image-section h1,
+    .what-we-do .title,
+    .careers h4 {
+        font: 30px/42px Satoshi-Bold, sans-serif;
+    }
+    .hero-image-section .btns{
+        justify-content: center;
+    }
+}
+
+@media(max-width:575.98px) {
+    .btn {
+        font-size: 18px;
+        padding: 8px 32px;
+    }
+    header .top-navbar-links,
+    footer .social-media-container {
+        justify-content: center;
+    }
+    footer .footer-bottom{
+        font-size: 14px;
+    }
+}
